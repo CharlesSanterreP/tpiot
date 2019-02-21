@@ -18,7 +18,7 @@ SSL_PORT = 465
 while True:     # in case of IO error, restart
     try:
         while True:
-            if grovepi.ultrasonicRead() < 100:  # If a person walks through the door
+            if grovepi.ultrasonicRead(7) < 100:  # If a person walks through the door
                 print("Welcome")
                 time.sleep(.5)
 
